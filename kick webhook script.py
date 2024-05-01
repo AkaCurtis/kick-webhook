@@ -9,7 +9,7 @@ last_stream_id = None
 
 def send_discord_notification(stream_title, stream_category, stream_preview_image, streamer_username):
     # Create a Discord webhook
-    webhook = Webhook.from_url('WEBHOOK HERE', adapter=RequestsWebhookAdapter())
+    webhook = Webhook.from_url('WEBHOOK_HERE', adapter=RequestsWebhookAdapter())
 
     # Create an embed
     embed = discord.Embed(title=stream_title, url=f"https://www.kick.com/{streamer_username}", color=0x32CD32)
@@ -21,11 +21,12 @@ def send_discord_notification(stream_title, stream_category, stream_preview_imag
     webhook.send(content_message, embed=embed)
 
 headers = {
-    'HEADERS HERE'
-}
+    'user-agent': 'Google-Safety',
+   }
 
 while True:
-    response = requests.get('YOU'LL REPLACE THIS WITH YOUR REQUESTS LINK', headers=headers)
+    response = requests.get('STREAMER_API_URL', headers=headers)
+    print(response.content)
     data = response.json()
 
     if data['data']:  # Check if the streamer is live
@@ -34,7 +35,7 @@ while True:
         stream_title = stream_info['session_title']
         stream_category = stream_info['category']['name']
         stream_preview_image = stream_info['thumbnail']['src'].replace('\\', '')
-        streamer_username = '{streamer username here}'  # Replace 'YOUR_USERNAME' with the actual username
+        streamer_username = 'YOUR_USERNAME'  # Replace 'YOUR_USERNAME' with the actual username
 
         # Check if it's a new stream
         if stream_id != last_stream_id:
