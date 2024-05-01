@@ -4,6 +4,7 @@ Hello! Before we get started lets have you read some basic things
 - If you want this to run 24/7 you will need a vps!
 - YOU DO NOT NEED API ACCESS TO DO THIS!
 - There will be some updates for this as well! You're welcome to fork it to make it better!
+- Download this by going to Code -> Download Zip
 
 Preview
 ========================
