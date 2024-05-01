@@ -44,3 +44,5 @@ Bugs that might occur
 This code was typed up quickly, so there MIGHT be bugs. Here's a list of some I could think of right away:
 - It might send a webhook multiple times (it SHOULDN'T but it might)
 - Preview image might be wrong, this is due to the limitations of Kick sadly. Once I find a fix I'll update the script!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://cash.app/$WRDSY)
