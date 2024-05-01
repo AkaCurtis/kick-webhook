@@ -20,12 +20,13 @@ Getting your Headers
 5. Right click, go down to copy, and click Copy as cURL (example below)
 ![Screenshot 2024-04-30 215312](https://github.com/AkaCurtis/kick-webhook/assets/63390006/c286db31-008e-4e7f-bdd3-9bb7fba84228)
 
-Getting your Headers
+Copying your Headers
 ========================
 1. Go here: https://curlconverter.com/ and paste the copied cURL into the top box, this will display your headers 
 2. DO NOT CHANGE THE INCLUDED USER-AGENT THIS IS WHAT MAKES THIS WORK. Provided it below just in case you overwrite it (it happens)
     -     'user-agent': 'Google-Safety',
 3. You won't need cookies for this
+4. YOU WILL NEED THE URL FROM THE REQUEST.GET
 
 How to create a webhoook
 ========================
